@@ -7,14 +7,15 @@ for (let i = 1; i <= 100 ; i++) {
     const square = document.createElement("div")
     square.classList.add ("my-col")
     
-    if (i % 3 === 0)  {
-        square.classList.add(".x3")
+    if (i % 3 === 0 && i % 5 === 0)  {
+        square.classList.add("x3-5")
     } else if (i % 5 === 0)  {
-        square.classList.add(".x5")
-    } else if (i % 3 === 0 && i % 5 === 0)  {
-        square.classList.add(".x3-5")
+        square.classList.add("x5")
+    } else if (i % 3 === 0)  {
+        square.classList.add("x3")
     } else {
-        square.classList.add(".std")
+        square.classList.add("std")
     }
+    
 containerGrid.append(square) 
 }
