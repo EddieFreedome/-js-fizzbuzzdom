@@ -10,11 +10,9 @@ body{
 
 .my-col{
     display: flex;
-    flex-grow: 1;
-    flex-shrink: 0;
     align-items: center;
     justify-content: center;
-    max-width: calc(100% / 7 - 20px);
+    width: calc(100% / 7 - 20px);
     height: 168.567px;
     margin: 10px;
     background-color: bisque;
